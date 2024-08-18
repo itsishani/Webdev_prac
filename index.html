@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>button{
+        background-color: grey;
+        padding: 15px 32px;
+        font-size: 16px;
+        cursor:pointer;
+        margin: 40vh 90vh;
+    }</style>
+</head>
+<body>
+    <button>Click me!</button>
+    <!-- <script src="app.js"></script> -->\
+    <script>const button = document.querySelector("button")
+        const body = document.querySelector("body")
+        const color = ['red','yellow','green','pink','orange']
+        body.style.backgroundColor = 'violet'
+        button.addEventListener('click',changecolor)
+        function changecolor(){
+            const colorIndex = parseInt(Math.random()*color.length)
+            body.style.backgroundColor = color[colorIndex]
+        }</script>
+</body>
+</html>
